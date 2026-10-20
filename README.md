@@ -1,34 +1,32 @@
-# repo-template
+# WorldChest
 
-Org baseline scaffold for new `combsmith` repositories. Click **Use this
-template** to create a repo pre-wired with the standard workflow stubs and
-baseline files, then hand the new repo to an agent with:
+Automatic backup, sync, restore and versioning for Minecraft Bedrock worlds, so
+a kid's worlds survive a new phone, a cracked screen or a bad update, and can be
+rewound to an earlier save without any technical work.
 
-> Follow `BOOTSTRAP.md` to bootstrap this repo. Stack: `<frontend | backend-go |
-> backend-python | backend-rust | fullstack | infra-terraform | none>`.
-> Description: `<one sentence>`. Project context: `<3–5 sentences>`.
+> NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG
+> OR MICROSOFT. "Minecraft" is used only as a secondary title, never in the
+> brand, domain, handles or packages, per the Minecraft Usage Guidelines.
 
-**[BOOTSTRAP.md](./BOOTSTRAP.md)** is the agent-executable runbook: the inputs
-to collect, what to do with every shipped file (keep / customize / delete), the
-verification checks, and the short list of org-admin steps a human finishes.
+**Status:** pre-code. The product brief, evidence and open questions live in
+[combsmith/incubator discussion #5](https://github.com/combsmith/incubator/discussions/5)
+(working name BlockVault; brand decision 2026-10-19: WorldChest, `worldchest.app`).
+The stack is not chosen yet; CI runs the org baseline checks until it is.
 
-## What you get on day 0
+## What it will do
 
-| Area | Shipped | Status in a new repo |
-|---|---|---|
-| Thin-caller workflow stubs (dev-lead, pr-auto-review, pr-review-mention, persona-mention, dependabot-automerge/rebase, dependency-audit, agent-shield, auto-rebase, add-to-project, initiative-driver, feature-ideation) | `.github/workflows/` | Working as-is; `feature-ideation.yml` needs its `project_context` set |
-| CI (`build-and-test`, `Secret scan (gitleaks)`, `coverage`) and SonarCloud | `ci.yml`, `sonarcloud.yml` | Green out of the box; replace the shell steps with your stack's |
-| Copilot cloud-agent setup | `copilot-setup-steps.yml` | Uncomment your stack block |
-| Dependabot | `.github/dependabot.yml` | `frontend` stack by default; swap for yours |
-| Baseline files | `CODEOWNERS`, `AGENTS.md`, `CLAUDE.md`, `SECURITY.md`, `LICENSE`, `.gitignore` (secrets baseline), `.gitleaks.toml`, `sonar-project.properties`, `copilot-instructions.md` | Docs and Sonar key need the project's name |
-| Repo settings, rulesets, labels, GHAS | not files | Applied by `bootstrap-new-repo.sh` in `combsmith/.github` (org admin) |
-| Initiatives board (`add-to-project`) | stub only | Red until an org admin both grants the repo the `INITIATIVES_APP_*` org secrets (selected visibility) and adds it to the `combsmith-planner` app installation |
+- **Backup** a device's whole local world library to the cloud, integrity-verified.
+- **Restore** every world onto a new device with no cables and no corruption
+  (the naive Smart Switch path crashes the game; the in-scope file set is known).
+- **Version** saves so a player can rewind.
+- **Tiered device access:** `.mcworld` share-sheet baseline for everyone, Shizuku
+  (ADB, no root) power mode for automatic full-library backup, a desktop companion
+  for big migrations, and the official Mojang API as the long-term goal.
 
-The workflow stubs and baseline files here are a distribution artifact of the org
-standards in [`combsmith/.github`](https://github.com/combsmith/.github)
-(`standards/`) and are regenerated from it — edit the standards, not this copy.
-`tests/` holds the bats guards that keep this template byte-aligned with those
-standards; they are template-only and are removed during bootstrap.
+## Working here
+
+Read [`AGENTS.md`](./AGENTS.md) first. Frameworks such as BMAD are vendored from
+`combsmith/.github-private` or `software-factory`, never installed per repo.
 
 ---
 

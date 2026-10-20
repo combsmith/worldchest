@@ -195,9 +195,20 @@ jobs:
       # its target users, and the competitive landscape. The more specific you
       # are, the more useful the proposals.
       project_context: |
-        TODO: Replace this with a description of the project and its market.
-        Example: "ProjectX is a [type of product] for [target user]. Competitors
-        include A, B, C. Key emerging trends in this space: X, Y, Z."
+        WorldChest is automatic backup, sync, restore and versioning for Minecraft
+        Bedrock worlds that live in a single fragile folder on kids' phones and
+        tablets; a new device, a cracked screen or a bad update wipes them with no
+        undo. Primary users are young Bedrock players (7-15); the buyer is their
+        parents, who already pay for photo backup and device insurance; secondary
+        users are map creators, streamers and Minecraft Education classrooms. The
+        freemium model targets a family subscription (~$5/month). Competitors and
+        substitutes: Realms (paid hosted multiplayer, not local-world preservation),
+        device-transfer tools such as Samsung Smart Switch (corrupt worlds), manual
+        ADB/.mcworld workflows. Key constraints and trends: Android 11+/iOS
+        owner-only app storage (tiered access: .mcworld share sheet, Shizuku power
+        mode, desktop companion, official Mojang API as the long-term goal), the
+        Minecraft Usage Guidelines (brand never contains "Minecraft"; NOT AN
+        OFFICIAL MINECRAFT PRODUCT disclaimer), and COPPA/GDPR-K for minors' data.
       # === OPTIONAL: repo-local reputable source list ===
       # Copy standards/feature-ideation-sources.md from combsmith/.github
       # to .github/feature-ideation-sources.md and customise it. The reusable
