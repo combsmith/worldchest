@@ -16,10 +16,11 @@ status: final
 - **Last updated:** 2026-10-21
 
 > **Scope note.** `brief.md` §7 recommends **park: buy evidence first**. Under that
-> recommendation, `idea:approved` on Discussion #5 authorises the evidence programme in
-> `brief.md` §6 (tests 1–4, plus the time-boxed watch in test 5) and the return of its results
-> to the Discussion. It does **not** authorise product code, a backend, a store listing or a
-> paid plan. This PRD therefore specifies the evidence programme as the deliverable. The backup
+> recommendation, the Decider starts the evidence programme in `brief.md` §6 (tests 1–4, plus
+> the time-boxed watch in test 5) with a dated "go" comment on Discussion #5, separate from
+> `idea:approved`, and returns its results to the Discussion. `idea:approved` is reserved for
+> the decision made after the results exist (FR-8). Neither the "go" nor the approval
+> authorises product code, a backend, a store listing or a paid plan by itself. This PRD therefore specifies the evidence programme as the deliverable. The backup
 > product the tests are about appears only as the hypothesis under test (§4.0) and in the
 > non-goals (§6). A product PRD is a later `update` of this document, written after the Decider
 > has read the results.
@@ -87,8 +88,8 @@ are the programme's own procedures, written at the light end of the scope dial.
   Include/skip file set, uploads the Library to Google Drive with md5 checks, and restores
   every World loading on the new phone (thread, POC comment). This is the baseline the
   product must beat and the know-how the Hallway test (UJ-3) packages.
-- **UJ-2. A recruited parent is interviewed.** A parent of a Bedrock player aged ~7–15 who
-  has changed a device or lost Worlds recently talks about what happened, what they did,
+- **UJ-2. A recruited parent is interviewed.** A parent of a Bedrock player aged ~7–15,
+  recruited regardless of incident history, talks about what happened, what they did,
   and what they already pay for `[ASSUMPTION: no input sets an interview length; the
   interviewer chooses one and records it]`. The interviewer records whether a
   loss or device-change incident is described. `[NOTE FOR PM]` Named journeys for the
@@ -188,14 +189,15 @@ and Waitlist sign-ups.
 
 #### FR-2: Parent interviews
 
-The Decider (or a delegate) can interview five parents of Bedrock players aged about 7–15 who
-have changed a device or lost Worlds within the last twelve months `[ASSUMPTION: the brief
-says "recent" without a bound]`, and record the outcome per interview.
+The Decider (or a delegate) can interview five parents of Bedrock players aged about 7–15, recruited without regard to
+whether they have had an incident, and record the outcome per interview. Recruiting only
+parents who changed a device or lost Worlds would make SM-1 pass by construction.
 
 **Consequences (testable):**
 - Five interviews are completed and dated; each has notes.
 - Each record states whether the parent described a lost-World or device-change incident
-  (yes/no), what they did about it, and what backup-like services they already pay for.
+  within the last twelve months (yes/no) `[ASSUMPTION: the brief says "recent" without a
+  bound]`, what they did about it, and what backup-like services they already pay for.
 - The count of parents describing an incident is written into `brief.md` §6 row 1.
 
 **Out of Scope:** interviewing children; surveys; compensation beyond what the Decider chooses
@@ -227,7 +229,7 @@ time for each.
   Only computer-free completions count toward the SM-3 graduation target.
 - Three Non-technical parents each attempt it unaided ("unaided" = no words or touches
   from the observer after the phone and script are handed over); for each, completion
-  (yes/no), elapsed time and the step where they stopped are recorded.
+  (yes/no, with computer-free or computer-assisted noted), elapsed time and the step where they stopped are recorded.
 - The tester's phone is left in its original state afterwards (Developer options and
   wireless debugging turned back off) `[ASSUMPTION: the setup is reversible with no data at
   risk; not stated in the thread]`.
@@ -298,7 +300,9 @@ decision.
 
 **Consequences (testable):**
 - The note lists the feedback-site threads and release-notes pages checked, with dates.
-- Any native feature found is written into `brief.md` §6 row 5 and is grounds for a "no".
+- Any native feature found is written into `brief.md` §6 row 5. It is grounds for a "no"
+  only if it closes the core product gap (automatic whole-Library backup with versioned
+  restore). A one-World native export is the FR-4 baseline, not a "no" condition.
 
 **Out of Scope:** building anything in response; a standing monitor beyond the decision date
 (§9).
@@ -319,15 +323,19 @@ Discussion #5, and record the decision.
 - A comment on Discussion #5 lists the five results against Graduation criteria (a) and (b)
   in `brief.md` §7 and the "say no" conditions. Criterion (c), a non-technical user
   completing an end-to-end restore on a fresh device with zero crashes, needs product code
-  and is reported as "not testable in this programme" `[NOTE FOR PM]` the Decider must
-  either accept (a) and (b) alone or authorise a restore prototype as a separate step.
-- The decision is recorded as `idea:approved` on the Discussion, or as a comment saying why
+  and is reported as "not testable in this programme". `[NOTE FOR PM]` `idea:approved` is not
+  recorded while (c) is unrun: the decision stays pending until the Decider authorises a
+  restore prototype as a separate step and (c) passes, or first revises the Graduation criteria
+  in `brief.md` §7 with a dated reason.
+- Approval requires every Graduation criterion to be met or explicitly revised; otherwise the
+  decision stays pending. The decision is recorded as `idea:approved` on the Discussion, or as a comment saying why
   not, with the date.
 
 ## 5. Constraints and Guardrails
 
 - **Privacy.** No child is a participant and no child data is collected. The Fake door stores
-  an adult email and a timestamp only. Interview notes name no child. World files are not
+  an adult email and a timestamp per sign-up, plus minimal anonymous session analytics
+  (FR-1). Interview notes name no child. World files are not
   uploaded anywhere by this programme.
 - **Safety of participants' devices.** The Hallway test touches a parent's own phone;
   nothing is backed up, deleted or restored during it, and the phone is returned to its
@@ -391,7 +399,8 @@ rather than inventing one.
   computer-assisted completions are reported separately. Target: at least 2 of 3
   computer-free (`brief.md` §7b). Validates FR-3.
 - **SM-4 Legal verdict recorded** — a dated permitted / prohibited / unclear note exists and
-  the Mojang question has been sent. Target: both done; "prohibited" is a "no" condition
+  the Mojang question has been sent. Target: both done and the verdict is "permitted". "Prohibited" is a "no"
+  condition and "unclear" blocks approval (re-park until permission is established)
   (`brief.md` §7). Validates FR-5.
 
 **Secondary**
@@ -433,8 +442,8 @@ rather than inventing one.
 
 - §3 Glossary — a Non-technical parent is one who has never enabled Developer options or
   used ADB; the thread and brief do not define the term.
-- §4.1 FR-1 — the Fake door collects only an adult email and a timestamp, with no counsel
-  review.
+- §4.1 FR-1 — the Fake door collects an adult email and timestamp per sign-up plus
+  anonymous session analytics, with no counsel review.
 - §4.1 FR-1 — Fake-door traffic comes from the owner's own channels; no ad budget.
 - §4.1 FR-2 — interview recruitment comes from the owner's own network.
 - §4.2 FR-3 — Shizuku's wireless-debugging route lets a parent complete setup without a
@@ -454,6 +463,6 @@ rather than inventing one.
   (author-reported, n=1, per `market-research.md`).
 - §4.1 FR-1 — "visitor" is a unique session and the test window is fixed before launch;
   the brief sets neither.
-- §4.1 FR-2 — "recent" device change or loss means within the last twelve months.
+- §4.1 FR-2 — an incident counts as "recent" when it happened within the last twelve months.
 - §4.2 FR-3 — Shizuku's status screen is the only observable end point before any product
   code exists.
