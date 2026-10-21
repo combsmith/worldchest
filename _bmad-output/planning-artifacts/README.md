@@ -1,7 +1,7 @@
 # Planning artifacts
 
 The incubation package WorldChest graduated with, copied verbatim from
-[`combsmith/incubator` `ideas/worldchest/`](https://github.com/combsmith/incubator/tree/main/ideas/worldchest)
+[`combsmith/incubator` `ideas/worldchest/`](https://github.com/combsmith/incubator/tree/c810ab7/ideas/worldchest)
 at the head of [incubator PR #184](https://github.com/combsmith/incubator/pull/184)
 (commit `c810ab7`). Source idea:
 [incubator Discussion #5](https://github.com/combsmith/incubator/discussions/5)

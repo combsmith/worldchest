@@ -3,7 +3,7 @@ artifact: prd
 status: final
 ---
 
-# PRD — WorldChest (working name BlockVault): evidence programme for backup, sync, restore & versioning of Minecraft Bedrock worlds
+# PRD — WorldChest: evidence programme for backup, sync, restore & versioning of Minecraft Bedrock worlds
 
 - **Slug:** `worldchest`
 - **Source Discussion:** https://github.com/combsmith/incubator/discussions/5
@@ -168,8 +168,14 @@ and Waitlist sign-ups.
 - Before the page receives its first visitor, the Conversion threshold is written into
   `brief.md` §6 row 1 (or the Discussion) with a date.
 - The page names the product WorldChest, follows the Naming rule, and shows the Disclaimer.
+- The page copy states the tested Family plan price (about $5/mo), so SM-2 measures interest
+  at that price.
 - The page takes no payment and stores nothing but an email address and a timestamp per
-  Waitlist sign-up `[ASSUMPTION: an adult's email with no child data is the least the test
+  Waitlist sign-up. Session analytics are separate and minimal: an anonymous session
+  identifier and page-view timestamp, no email linkage, no child data. The analytics
+  provider, retention period and privacy notice or consent wording are recorded with the
+  Conversion threshold before launch (§9 question 5)
+  `[ASSUMPTION: an adult's email with no child data is the least the test
   can collect; counsel has not reviewed this]`.
 - "Visitor" means a unique session as counted by the page's analytics; the test window
   (start and end date) is written down with the Conversion threshold before launch
@@ -211,12 +217,14 @@ time for each.
   end state below on their own Android phone, with no command line or computer required of
   the parent `[ASSUMPTION: Shizuku's wireless-debugging route makes this possible on
   Android 11+; the POC used a computer and ADB]`.
-- **End state ("completed Power mode setup"):** no WorldChest app exists, so completion is
+- **End state ("Shizuku setup feasibility"):** no WorldChest app exists, so completion is
   Shizuku's own status screen reporting that its service is running, reached by the parent
-  without help `[ASSUMPTION: Shizuku's status screen is the only observable end point
+  without help. This shows Shizuku setup feasibility only; WorldChest permissions, backup,
+  restore and product onboarding remain untested `[ASSUMPTION: Shizuku's status screen is the only observable end point
   available before any product code; the thread describes no onboarding steps]`.
-- If the script cannot avoid a computer step (§9 question 4), the test still runs; the
-  computer step is recorded, and SM-3 is reported as "completed with a computer step".
+- If the script cannot avoid a computer step (§9 question 4), the test still runs. Each
+  attempt is recorded as computer-free or computer-assisted, with the computer step noted.
+  Only computer-free completions count toward the SM-3 graduation target.
 - Three Non-technical parents each attempt it unaided ("unaided" = no words or touches
   from the observer after the phone and script are handed over); for each, completion
   (yes/no), elapsed time and the step where they stopped are recorded.
@@ -375,10 +383,13 @@ rather than inventing one.
   incident, out of five. Target: at least 3 of 5 (`brief.md` §7a). Validates FR-2.
 - **SM-2 Fake-door conversion** — Waitlist sign-ups per visitor over the test window.
   Target: at or above the Conversion threshold the Decider sets before launch (`brief.md`
-  §7a; the value is open, §9). Validates FR-1.
-- **SM-3 Unaided setup completion** — Non-technical parents who reach the FR-3 end state
-  (Shizuku reporting its service running) alone, out of three; reported "with a computer
-  step" if one was needed. Target: at least 2 of 3 (`brief.md` §7b). Validates FR-3.
+  §7a; the value is open, §9), and only if visitors reach a minimum count, also set before
+  launch. Below that floor SM-2 is inconclusive and cannot count toward graduation.
+  Validates FR-1.
+- **SM-3 Shizuku setup feasibility (unaided)** — Non-technical parents who reach the FR-3
+  end state (Shizuku reporting its service running) alone, out of three. Computer-free and
+  computer-assisted completions are reported separately. Target: at least 2 of 3
+  computer-free (`brief.md` §7b). Validates FR-3.
 - **SM-4 Legal verdict recorded** — a dated permitted / prohibited / unclear note exists and
   the Mojang question has been sent. Target: both done; "prohibited" is a "no" condition
   (`brief.md` §7). Validates FR-5.

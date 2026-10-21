@@ -3,7 +3,7 @@ artifact: brainstorm
 status: final
 ---
 
-# Brainstorm — WorldChest (working name BlockVault): backup, sync, restore & versioning for Minecraft Bedrock worlds
+# Brainstorm — WorldChest: backup, sync, restore & versioning for Minecraft Bedrock worlds
 
 - **Slug:** `worldchest`
 - **Source Discussion:** https://github.com/combsmith/incubator/discussions/5

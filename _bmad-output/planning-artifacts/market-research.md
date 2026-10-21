@@ -3,7 +3,7 @@ artifact: market-research
 status: final
 ---
 
-# Market Research — WorldChest (working name BlockVault): backup, sync, restore & versioning for Minecraft Bedrock worlds
+# Market Research — WorldChest: backup, sync, restore & versioning for Minecraft Bedrock worlds
 
 - **Slug:** `worldchest`
 - **Last updated:** 2026-10-20
@@ -11,7 +11,7 @@ status: final
 Scope: Minecraft **Bedrock** worlds on phones/tablets (Android first, iOS second), for
 young players and the parents who would pay. Research was desk-only (web search and
 fetch on 2026-10-20). No user interviews, surveys or store analytics were available.
-Brand per the thread (2026-10-19): **WorldChest**; "BlockVault" is the working name in the slug.
+Brand per the thread (2026-10-19): **WorldChest**. "BlockVault" was the pre-decision working name (historical provenance only).
 
 ## How it's solved today
 
@@ -97,8 +97,13 @@ Brand per the thread (2026-10-19): **WorldChest**; "BlockVault" is the working n
   sufficient. Paid backup-service legality is an explicit, unresolved legal gate. Whether the EULA/Usage Guidelines
   allow a *paid* backup service for user worlds was not confirmed: the EULA page
   (https://www.minecraft.net/en-us/eula) timed out on fetch, so this is unknown — needs discovery.
-- **Legal: children's privacy.** The amended FTC COPPA Rule took effect in June 2025, with
-  operator compliance due 2026-04-22 (https://www.ashurstperkinscoie.com/en/insights/ftc-finally-publishes-amended-coppa-rule-compliance-deadlines-set/).
+- **Legal: children's privacy.** The FTC's amended COPPA Rule was published in the Federal
+  Register on 2025-04-22 and took effect in June 2025. Most operators have 365 days from
+  publication to comply (2026-04-22, already passed as of 2026-10-21); some provisions, such
+  as those for FTC-approved Safe Harbor programs, carry separate dates that were not checked
+  here. Primary source to confirm: the FTC rule page and the Federal Register notice
+  (https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa);
+  secondary summary: https://www.ashurstperkinscoie.com/en/insights/ftc-finally-publishes-amended-coppa-rule-compliance-deadlines-set/.
   COPPA applicability depends on the target age, whether the service collects personal
   information from children, and which account or world-file fields qualify as personal
   information. Treat parent-account and verifiable-consent architecture as a legal
