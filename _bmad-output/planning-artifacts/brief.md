@@ -101,7 +101,8 @@ cost about a week together and need no product code. Run them, then return for `
   before launch (see `prd.md` FR-1 and SM-2). (b) 2 of 3 non-technical parents
   finish Shizuku setup unaided. (c) A non-technical user can complete an end-to-end restore
   on a fresh device with zero crashes, the destination inventory matches the source inventory,
-  and every in-scope world loads successfully or passes integrity validation.
+  and every in-scope world is opened in the game and loads (matching checksums alone do not
+  satisfy this).
 - **What should make the decider say no:** parents treat it as a free-utility problem
   ("I'd just use Realms / not bother"); Shizuku setup fails for non-technical parents and
   the share-sheet tier cannot carry the product alone; the EULA/Usage Guidelines forbid a

@@ -23,7 +23,7 @@ flowchart TD
 
     S1 --> A1["Test: 3 non-technical parents attempt Shizuku onboarding unaided — completion rate"]
     S2 --> A2["Test: 1-day spike — does Bedrock mobile export .mcworld via share-sheet on Android 15 and iOS?"]
-    S3 --> A3["FUTURE (post-approval, needs product code, not in the evidence programme): scheduled Shizuku backup survives reboot and restores a prior version; restored inventory matches source and every in-scope world loads or passes integrity validation"]
+    S3 --> A3["FUTURE (post-approval, needs product code, not in the evidence programme): scheduled Shizuku backup survives reboot and restores a prior version; restored inventory matches source and every in-scope world is opened in the game and loads"]
     S4 --> A4["Test: fake-door Family plan on worldchest.app + 5 parent problem interviews"]
 ```
 

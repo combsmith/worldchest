@@ -171,6 +171,9 @@ and Waitlist sign-ups.
 - The page names the product WorldChest, follows the Naming rule, and shows the Disclaimer.
 - The page copy states the tested Family plan price (about $5/mo), so SM-2 measures interest
   at that price.
+- The page is addressed to parents. Before the email field it asks the visitor to confirm
+  they are an adult parent or guardian, and says children must not submit their own address;
+  no age or other child data is collected.
 - The page takes no payment and stores nothing but an email address and a timestamp per
   Waitlist sign-up. Session analytics are separate and minimal: an anonymous session
   identifier and page-view timestamp, no email linkage, no child data. The analytics
@@ -227,11 +230,16 @@ time for each.
 - If the script cannot avoid a computer step (§9 question 4), the test still runs. Each
   attempt is recorded as computer-free or computer-assisted, with the computer step noted.
   Only computer-free completions count toward the SM-3 graduation target.
+- Eligible phones run Android 11 or later (the wireless-debugging route); for every attempt the
+  device model, OEM, Android version and Shizuku version are recorded, so results can be read
+  against the device mix `[ASSUMPTION: Android 11+ is the supported floor; Shizuku behaviour
+  varies by OEM per market-research.md]`.
 - Three Non-technical parents each attempt it unaided ("unaided" = no words or touches
   from the observer after the phone and script are handed over); for each, completion
   (yes/no, with computer-free or computer-assisted noted), elapsed time and the step where they stopped are recorded.
-- The tester's phone is left in its original state afterwards (Developer options and
-  wireless debugging turned back off) `[ASSUMPTION: the setup is reversible with no data at
+- The tester's phone is left in its original state afterwards: Developer options and
+  wireless debugging turned back off, the wireless-debugging pairing removed, and Shizuku
+  uninstalled if it was not installed before the test `[ASSUMPTION: the setup is reversible with no data at
   risk; not stated in the thread]`.
 - The completion count is written into `brief.md` §6 row 2.
 
