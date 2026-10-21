@@ -13,8 +13,10 @@ young players on phones and tablets; parents are the buyer. The brief, the n=1
 proof (232 worlds migrated S22 → S24 by hand) and the open legal and platform
 questions are in
 [combsmith/incubator discussion #5](https://github.com/combsmith/incubator/discussions/5).
-No application code exists yet and no stack has been chosen (`STACK=none` at
-bootstrap). Candidate shape from the brief: a mobile app (Android first, Bedrock
+The incubation package (brainstorm, market research, brief, OST, PRD) is in
+`_bmad-output/planning-artifacts/`; consult it before implementing anything, per
+the org `AGENTS.md` BMAD rules. No application code exists yet and no stack has
+been chosen (`STACK=none` at bootstrap). Candidate shape from the brief: a mobile app (Android first, Bedrock
 share-sheet + Shizuku power mode), a desktop companion for migrations, and a
 cloud backend for storage and versioning.
 

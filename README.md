@@ -8,9 +8,12 @@ rewound to an earlier save without any technical work.
 > OR MICROSOFT. "Minecraft" is used only as a secondary title, never in the
 > brand, domain, handles or packages, per the Minecraft Usage Guidelines.
 
-**Status:** pre-code. The product brief, evidence and open questions live in
-[combsmith/incubator discussion #5](https://github.com/combsmith/incubator/discussions/5)
-(working name BlockVault; brand decision 2026-10-19: WorldChest, `worldchest.app`).
+**Status:** pre-code, graduated from the incubator. The brainstorm, market
+research, decision brief, opportunity–solution tree and PRD live in
+[`_bmad-output/planning-artifacts/`](./_bmad-output/planning-artifacts/) (seeded
+from [combsmith/incubator discussion #5](https://github.com/combsmith/incubator/discussions/5);
+working name BlockVault; brand decision 2026-10-19: WorldChest, `worldchest.app`).
+The brief's recommendation is to buy evidence first; the PRD scopes that work.
 The stack is not chosen yet; CI runs the org baseline checks until it is.
 
 ## What it will do
