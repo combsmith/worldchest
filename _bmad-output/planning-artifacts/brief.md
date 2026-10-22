@@ -107,8 +107,9 @@ cost about a week together and need no product code. Run them, then return for `
   ("I'd just use Realms / not bother"); Shizuku setup fails for non-technical parents and
   the share-sheet tier cannot carry the product alone; the EULA/Usage Guidelines forbid a
   paid service; or Mojang announces native mobile world backup.
-- **The decision is the human's**, made by applying `idea:approved` on the Discussion/PR.
-  This brief only recommends.
+- **The decision is the human's**, recorded as a dated build / close / re-park comment on
+  worldchest Discussion #6. Applying `idea:approved` starts the evidence programme; it does
+  not record the final decision. This brief only recommends.
 
 ## 8. Open questions
 

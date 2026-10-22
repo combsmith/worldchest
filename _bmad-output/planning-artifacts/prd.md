@@ -16,11 +16,13 @@ status: final
 - **Last updated:** 2026-10-21
 
 > **Scope note.** `brief.md` §7 recommends **park: buy evidence first**. Under that
-> recommendation, the Decider starts the evidence programme in `brief.md` §6 (tests 1–4, plus
-> the time-boxed watch in test 5) with a dated "go" comment on Discussion #5, separate from
-> `idea:approved`, and returns its results to the Discussion. `idea:approved` is reserved for
-> the decision made after the results exist (FR-8). Neither the "go" nor the approval
-> authorises product code, a backend, a store listing or a paid plan by itself. This PRD therefore specifies the evidence programme as the deliverable. The backup
+> recommendation, the Decider started the evidence programme in `brief.md` §6 (tests 1–4,
+> plus the time-boxed watch in test 5) by applying `idea:approved` to incubator Discussion #5
+> on 2026-10-21; in this repo that label means **graduate and run the evidence programme**,
+> not "build the product". Results and the build / close / re-park decision are recorded on
+> [worldchest Discussion #6](https://github.com/combsmith/worldchest/discussions/6), where
+> the epic lives (FR-8). Neither the label nor the later decision comment authorises product
+> code, a backend, a store listing or a paid plan by itself. This PRD therefore specifies the evidence programme as the deliverable. The backup
 > product the tests are about appears only as the hypothesis under test (§4.0) and in the
 > non-goals (§6). A product PRD is a later `update` of this document, written after the Decider
 > has read the results.
@@ -60,8 +62,8 @@ The programme serves two jobs. The product job is the thread's, repeated here on
 tests can be read against it.
 
 - **Decider (functional):** when I must decide whether to build WorldChest, I want evidence on
-  demand, onboarding, platform and legal permission, so I can apply `idea:approved` or close
-  the idea with a reason that will still make sense in a year.
+  demand, onboarding, platform and legal permission, so I can decide to build, close or
+  re-park the idea with a reason that will still make sense in a year.
 - **Decider (emotional):** avoid building a free utility nobody pays for, and avoid losing a
   real product to a week of hesitation.
 - **Product job (from the thread, under test):** "When I get a new device or a world corrupts,
@@ -98,8 +100,8 @@ are the programme's own procedures, written at the light end of the scope dial.
   draft Onboarding script and their own Android phone, and left alone. The observer records
   completion, elapsed time and where they stopped.
 - **UJ-4. The Decider reads the results.** The results land in the `brief.md` §6 Result
-  column and as a comment on Discussion #5. The Decider checks them against the Graduation
-  criteria in `brief.md` §7 and applies `idea:approved` or writes why not.
+  column and as a comment on worldchest Discussion #6. The Decider checks them against the
+  Graduation criteria in `brief.md` §7 and posts a dated build / close / re-park decision there.
 
 ## 3. Glossary
 
@@ -127,7 +129,8 @@ are the programme's own procedures, written at the light end of the scope dial.
   a phone `[ASSUMPTION: the thread and brief do not define the term]`.
 - **Onboarding script** — the parent-facing, step-by-step instructions for Power mode setup
   used in the Hallway test.
-- **Decider** — the human who applies `idea:approved` on Discussion #5 (the idea owner).
+- **Decider** — the idea owner: applied `idea:approved` on incubator Discussion #5 to start
+  the programme, and records the build / close / re-park decision on worldchest Discussion #6.
 - **Family plan** — the hypothesised recurring subscription (~$5/mo, `brief.md` §6 row 1),
   bought by a parent.
 - **Disclaimer** — the "NOT AN OFFICIAL MINECRAFT PRODUCT" notice the brand decision says
@@ -203,8 +206,10 @@ parents who changed a device or lost Worlds would make SM-1 pass by construction
   bound]`, what they did about it, and what backup-like services they already pay for.
 - The count of parents describing an incident is written into `brief.md` §6 row 1.
 
-**Out of Scope:** interviewing children; surveys; compensation beyond what the Decider chooses
-`[ASSUMPTION: recruitment comes from the owner's own network; the brief names no channel]`.
+**Out of Scope:** interviewing children; surveys; compensation of any kind.
+**Decided 2026-10-22:** the owner recruits from their own network, interviews in person, and
+pays nothing ($0 ceiling). Expect some bias toward friendly respondents; note each parent's
+relationship to the owner in the record.
 
 ### 4.2 Onboarding feasibility (brief §6 row 2)
 
@@ -253,7 +258,8 @@ World through the share sheet and re-import it. One day, two devices.
 #### FR-4: Share-sheet round trip
 
 The Decider can export one World as a `.mcworld` through the share sheet and re-import it, on
-one Android 15 device and one iOS device, and record the result for each.
+one Android 15 device and one iOS device (decided 2026-10-22: the household iPad or iPhone,
+with model and iOS version recorded), and record the result for each.
 
 **Consequences (testable):**
 - For each device: whether an export action exists in the game, whether the exported file
@@ -323,21 +329,22 @@ decided. Realises UJ-4.
 #### FR-8: Results into the brief and the Discussion
 
 The Decider can read every test's result in `brief.md` §6 and a summary comment on
-Discussion #5, and record the decision.
+worldchest Discussion #6, and record the decision there.
 
 **Consequences (testable):**
 - Each of rows 1–5 in `brief.md` §6 has a dated Result entry (a value, "not shown", or "not
   run" with a reason).
-- A comment on Discussion #5 lists the five results against Graduation criteria (a) and (b)
+- A comment on worldchest Discussion #6 lists the five results against Graduation criteria (a) and (b)
   in `brief.md` §7 and the "say no" conditions. Criterion (c), a non-technical user
   completing an end-to-end restore on a fresh device with zero crashes, needs product code
-  and is reported as "not testable in this programme". `[NOTE FOR PM]` `idea:approved` is not
+  and is reported as "not testable in this programme". `[NOTE FOR PM]` A "build" decision is not
   recorded while (c) is unrun: the decision stays pending until the Decider authorises a
   restore prototype as a separate step and (c) passes, or first revises the Graduation criteria
   in `brief.md` §7 with a dated reason.
 - Approval requires every Graduation criterion to be met or explicitly revised; otherwise the
-  decision stays pending. The decision is recorded as `idea:approved` on the Discussion, or as a comment saying why
-  not, with the date.
+  decision stays pending. The decision is recorded as a dated comment on worldchest
+  Discussion #6 stating build, close or re-park and why, with a pointer back to incubator
+  Discussion #5.
 
 ## 5. Constraints and Guardrails
 
@@ -431,9 +438,10 @@ rather than inventing one.
 
 1. What is the Conversion threshold? The brief leaves it to the Decider; it must be set and
    dated before the Fake door goes live (FR-1).
-2. Where are five qualifying parents recruited from, and who interviews them (FR-2)?
-3. Which iOS device and version is used for FR-4, and is an export action available there at
-   all? (`market-research.md` reports iOS world files are not reliably visible in Files.)
+2. ~~Where are five qualifying parents recruited from, and who interviews them (FR-2)?~~
+   Decided 2026-10-22: the owner's own network, interviewed by the owner, $0 compensation.
+3. ~~Which iOS device and version is used for FR-4?~~ Decided 2026-10-22: the household
+   iPad or iPhone, run by the owner. Still open: is an export action available there at all? (`market-research.md` reports iOS world files are not reliably visible in Files.)
 4. Can the Onboarding script avoid a computer entirely (Shizuku via wireless debugging), or
    does Power mode setup need a one-time PC step? This changes what "unaided" means (FR-3).
 5. Does collecting an adult email on the Fake door need a privacy notice beyond the
@@ -453,7 +461,7 @@ rather than inventing one.
 - §4.1 FR-1 — the Fake door collects an adult email and timestamp per sign-up plus
   anonymous session analytics, with no counsel review.
 - §4.1 FR-1 — Fake-door traffic comes from the owner's own channels; no ad budget.
-- §4.1 FR-2 — interview recruitment comes from the owner's own network.
+- §4.1 FR-2 — interview recruitment comes from the owner's own network (confirmed by the owner 2026-10-22).
 - §4.2 FR-3 — Shizuku's wireless-debugging route lets a parent complete setup without a
   computer on Android 11+; the POC used a computer and ADB.
 - §4.2 FR-3 — Power mode setup on a tester's phone is reversible with no data at risk.
