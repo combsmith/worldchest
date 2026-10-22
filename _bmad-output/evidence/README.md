@@ -10,7 +10,7 @@ Working notes for the WorldChest evidence programme (epic
 | `brand-checklist.md` | #8 (FR-6) | The Naming rule and Disclaimer checklist every published page and post is checked against |
 | `eula-note.md` | #9 (FR-5) | Dated note quoting the EULA / Usage Guidelines clauses, the verdict, and the Mojang question with send date and reply |
 | `fake-door.md` | #10 (FR-1) | Conversion threshold, visitor floor, test window, analytics provider, retention and privacy wording, all dated before launch; then the results |
-| `interviews.md` | #11 (FR-2) | One row per interview: date, relationship to the owner, incident yes/no, what they did, services they pay for. **No names, no child data.** |
+| `interviews.md` | #11 (FR-2) | Aggregated, anonymised interview outcomes only, such as incident counts and broad action or service categories. Keep dated per-interview records offline; publish no relationship or row-level details. |
 | `onboarding-script.md`, `hallway.md` | #12 (FR-3) | The parent-facing script; one row per attempt with device model, OEM, Android and Shizuku versions, computer-free or assisted, time, where they stopped |
 | `share-sheet.md` | #13 (FR-4) | Result per device (Android 15 and the household iPad or iPhone) with game and OS versions |
 | `mojang-watch.md` | #14 (FR-7) | Dated checks of feedback threads and release notes |
