@@ -118,7 +118,10 @@ jobs:
         run: |
           permission=none
           if [[ "${AUTHOR}" =~ ^[A-Za-z0-9][A-Za-z0-9-]*$ ]]; then
-            permission=$(gh api "repos/${REPO}/collaborators/${AUTHOR}/permission" --jq '.permission')
+            # A non-collaborator returns 404; fail closed with a clean skip.
+            if ! permission=$(gh api "repos/${REPO}/collaborators/${AUTHOR}/permission" --jq '.permission'); then
+              permission=none
+            fi
           fi
           case "${permission}" in
             admin | write) ;;
